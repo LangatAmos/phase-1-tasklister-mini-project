@@ -6,6 +6,21 @@ document.addEventListener(DOMContentLoaded, () => {
         form.reset()
     })
 
+let userInput = document.createElement('input')
+userInput.type = 'text'
+userInput.id = 'user'
+userInput.appendChild(form)
+
+let duration = document.createElement('input')
+duration.type = 'number'
+duration.id = 'duration'
+duration.appendChild(form)
+
+let dateDue = document.createElement('input')
+dateDue.type = 'date'
+dateDue.id = 'dateDue'
+dateDue.appendChild(form)
+
 })
 
 function bildTaskList(task){
